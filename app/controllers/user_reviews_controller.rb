@@ -1,17 +1,17 @@
 class UserReviewsController < ApplicationController
     def index 
-        @userReviews = UserReview.all
-        render json: @userReviews
+        userReviews = UserReview.all
+        render json: userReviews
     end 
 
     def show 
-        @userReview = UserReview.find(params[:id])
-        render json: @userReview
+        userReview = UserReview.find(params[:id])
+        render json: userReview
     end
 
     def create 
-        @userReview = UserReview.create(userReview_params)
-        render json: @userReview
+        userReview = UserReview.create(userReview_params)
+        render json: userReview
     end 
 
     private 
