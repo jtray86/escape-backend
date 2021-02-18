@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   get '/reviews/new', to: 'reviews#new'
   post '/reviews', to: 'reviews#create'
   get '/reviews/:id', to: 'reviews#show'
+  patch '/reviews/:id', to: 'reviews#update'
+  delete '/reviews/:id', to: 'reviews#destroy'
 
   # resources :user_reviews
   get '/userReviews', to: 'user_reviews#index'
