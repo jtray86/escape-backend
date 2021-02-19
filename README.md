@@ -1,24 +1,27 @@
-# README
+# escape-backend
+## Description 
+A single-use escape room app that requires the user to collect clues around the page in order to successfully leave. 
+Backend utilizes Ruby on Rails. 
+- Created by Jen Tracy & Lucius VanSlyke 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Instructions to Start 
+### Requirements  
+ This application utilizes a separate frontend, which can be found here: https://github.com/fangbalm/escape-frontend
+ - **Database:** Postgresql 
+ 
+Ruby gems required to run: 
+- gem 'active_model_serializers'
+- gem 'rails', '~> 5.2.1'
+- gem 'rack-cors'
 
-Things you may want to cover:
+### Deployment 
+1. ```bundle install``` on your local terminal (ensure postgresql is running on your machine) 
+2.  ```rails db:create```
+3.  ```rails db:migrate``` 
+4.  ```rails db:seed```
 
-* Ruby version
+### Game Functionality 
+Your goal is to move about the page and add the appropriate items to your cart in order to leave the e-commerce hellscape. You have to utilize clues around the page in order to get the appropriate items in your cart and win!
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Credit:** 
+Flatiron School - Phase 3 
